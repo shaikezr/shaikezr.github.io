@@ -8,10 +8,12 @@
 		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
 		<script>
 			var curHeight = window.innerHeight;
-			document.addEventListener('resize', function(){
-				if (window.innerHeight != curHeight){
-					alert('changed');
-				}})
+			while (true){
+				console.log(curHeight);
+				if (curHeight > window.innerHeight){
+					alert('we did it');
+				}
+			}
 				
 			//document.addEventListener("visibilitychange", function() {
 			//	alert( document.visibilityState );
