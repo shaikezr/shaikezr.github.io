@@ -14,12 +14,8 @@
 		<a href="https://www.facebook.com/zshaiken"><img id="facebook" src="facebookIcon.png" alt="www.facebook.com/zshaiken" style="width50px;height:50px;"></a>
 		<a href="https://github.com/shaikezr"><img id="github" src="githubIcon.png" alt="www.github.com/shaikezr" style="width50px;height:50px;"></a>
 		<script>
-			var curHeight = window.innerHeight;
-			while (true){
-				console.log(curHeight);
-				if (curHeight > window.innerHeight){
-					alert('we did it');
-				}
+			window.addEventListener('resize',function(){
+				alert('worked?');
 			}
 				
 			//document.addEventListener("visibilitychange", function() {
