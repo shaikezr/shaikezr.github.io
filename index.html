@@ -7,11 +7,15 @@
 		<link rel="stylesheet" href="mainstyles.css"> 
 		<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
 		<script>
-			function(){alert(window.innerHeight)}
+			var curHeight = window.innerHeight;
+			document.addEventListener('resize', function(){
+				if (window.innerHeight != curHeight){
+					alert('changed');
+				}})
 				
-			document.addEventListener("visibilitychange", function() {
-				alert( document.visibilityState );
-			});
+			//document.addEventListener("visibilitychange", function() {
+			//	alert( document.visibilityState );
+			//});
 		</script>
 	</head>
 
